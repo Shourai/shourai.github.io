@@ -17,18 +17,12 @@
 			<guid>https://shourai.github.io/posts/geodesic/</guid>
 			<description>Lets derive the geodesic equation using the action principle.
 Let the action be defined as
-\begin{equation}
-S = \int ds
-\end{equation}
+\[\tag{1} S = \int ds \]
 with the line element \(ds = \sqrt{-g_{\mu\nu}(x)dx^\mu dx^\nu}\).</description>
 			<content type="html"><![CDATA[<p>Lets derive the geodesic equation using the action principle.<br />
-Let the action be defined as</p>
-
-<p>\begin{equation}<br />
-S = \int ds<br />
-\end{equation}</p>
-
-<p>with the line element \(ds = \sqrt{-g_{\mu\nu}(x)dx^\mu dx^\nu}\).</p>
+Let the action be defined as<br />
+\[\tag{1}   S = \int ds \]<br />
+with the line element \(ds = \sqrt{-g_{\mu\nu}(x)dx^\mu dx^\nu}\).</p>
 ]]></content>
 		</item>
 		

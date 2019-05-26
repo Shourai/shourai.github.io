@@ -20,9 +20,7 @@
       <guid>https://shourai.github.io/posts/geodesic/</guid>
       <description>Lets derive the geodesic equation using the action principle.
 Let the action be defined as
-\begin{equation}
-S = \int ds
-\end{equation}
+\[\tag{1} S = \int ds \]
 with the line element \(ds = \sqrt{-g_{\mu\nu}(x)dx^\mu dx^\nu}\).</description>
     </item>
     
