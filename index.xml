@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shourai</title>
+    <link>https://shourai.github.io/</link>
+    <description>Recent content on Shourai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 26 May 2019 13:54:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://shourai.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>macOS Python Notification</title>
+      <link>https://shourai.github.io/posts/macos-python-notification/</link>
+      <pubDate>Sun, 26 May 2019 13:54:00 +0200</pubDate>
+      
+      <guid>https://shourai.github.io/posts/macos-python-notification/</guid>
+      <description>While looking for a solution to have my computer notify me when something
+happens, I started to search for a solution using python.
+It is possible to use python without any other third party libraries to post a
+notification with your own *title*, *text* and *sound*.
+A great solution was posted on stackexchange Python post osx notification.
+import os def notify(title, text): os.system(&amp;#34;&amp;#34;&amp;#34; osascript -e &amp;#39;display notification &amp;#34;{}&amp;#34; with title &amp;#34;{}&amp;#34; sound name {}&amp;#39;&amp;#34;&amp;#34;&amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>Profile emacs usepackage</title>
+      <link>https://shourai.github.io/posts/profile-emacs-usepackage/</link>
+      <pubDate>Sun, 26 May 2019 13:48:00 +0200</pubDate>
+      
+      <guid>https://shourai.github.io/posts/profile-emacs-usepackage/</guid>
+      <description>If you&amp;rsquo;d like to see how many packages you&amp;rsquo;ve loaded, what stage of
+initialization they&amp;rsquo;ve reached, and how much aggregate time they&amp;rsquo;ve
+spent (roughly), you can enable use-package-compute-statistics after
+loading use-package but before any use-package forms, and then run the
+command M-x use-package-report to see the results. The buffer
+displayed is a tabulated list. You can use S in a column to sort the
+rows based on it.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://shourai.github.io/about/</link>
+      <pubDate>Sun, 26 May 2019 12:56:00 +0200</pubDate>
+      
+      <guid>https://shourai.github.io/about/</guid>
+      <description>This &amp;ldquo;blog&amp;rdquo; is used as a respository to my knowledge base.</description>
+    </item>
+    
+    <item>
+      <title>Useful SSH Commands</title>
+      <link>https://shourai.github.io/posts/ssh-commands/</link>
+      <pubDate>Sun, 26 May 2019 12:56:00 +0200</pubDate>
+      
+      <guid>https://shourai.github.io/posts/ssh-commands/</guid>
+      <description>To make it easier to SSH you can set up a config file in the .ssh folder
+containing the following.
+Host &amp;lt;host&amp;gt; HostName &amp;lt;192.168.1.1&amp;gt; User &amp;lt;username&amp;gt; with this you can just type ssh &amp;lt;host&amp;gt;.
+Send a command over SSH:
+ssh &amp;lt;user&amp;gt;@192.168.1.1 &#39;ls -l; ps -aux; whoami&#39;</description>
+    </item>
+    
+  </channel>
+</rss>

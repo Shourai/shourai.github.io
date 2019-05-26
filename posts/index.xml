@@ -1,0 +1,93 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on Shourai</title>
+		<link>https://shourai.github.io/posts/</link>
+		<description>Recent content in Posts on Shourai</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+		<lastBuildDate>Sun, 26 May 2019 13:54:00 +0200</lastBuildDate>
+		<atom:link href="https://shourai.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>macOS Python Notification</title>
+			<link>https://shourai.github.io/posts/macos-python-notification/</link>
+			<pubDate>Sun, 26 May 2019 13:54:00 +0200</pubDate>
+			
+			<guid>https://shourai.github.io/posts/macos-python-notification/</guid>
+			<description>While looking for a solution to have my computer notify me when something
+happens, I started to search for a solution using python.
+It is possible to use python without any other third party libraries to post a
+notification with your own *title*, *text* and *sound*.
+A great solution was posted on stackexchange Python post osx notification.
+import os def notify(title, text): os.system(&amp;#34;&amp;#34;&amp;#34; osascript -e &amp;#39;display notification &amp;#34;{}&amp;#34; with title &amp;#34;{}&amp;#34; sound name {}&amp;#39;&amp;#34;&amp;#34;&amp;#34;.</description>
+			<content type="html"><![CDATA[<p>While looking for a solution to have my computer notify me when something<br />
+happens, I started to search for a solution using python.<br />
+It is possible to use python without any other third party libraries to post a<br />
+notification with your own *<strong><em>title</em></strong>*, *<strong><em>text</em></strong>* and *<strong><em>sound</em></strong>*.<br />
+A great solution was posted on stackexchange <a href="https://stackoverflow.com/a/41318195/7642675">Python post osx notification</a>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="k">def</span> <span class="nf">notify</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&#34;&#34;&#34;
+</span><span class="s2">            osascript -e &#39;display notification &#34;{}&#34; with title &#34;{}&#34; sound name
+</span><span class="s2">            {}&#39;&#34;&#34;&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">sound</span><span class="p">))</span>
+
+<span class="n">notify</span><span class="p">(</span><span class="s2">&#34;Title&#34;</span><span class="p">,</span> <span class="s2">&#34;Heres an alert&#34;</span><span class="p">,</span> <span class="s2">&#34;default&#34;</span><span class="p">)</span></code></pre></div>
+<p>With valid sounds from<br />
+<code>~/Library/Sounds</code><br />
+<code>/System/Library/Sounds</code></p>
+
+<p>You can read a little more about it over at the apple developer website <a href="https://developer.apple.com/library/content/documentation/LanguagesUtilities/Conceptual/MacAutomationScriptingGuide/DisplayNotifications.html">Display Notification</a><br />
+Also this answer on <a href="https://apple.stackexchange.com/a/115373">Stackexchange</a> has a great explanantion</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Profile emacs usepackage</title>
+			<link>https://shourai.github.io/posts/profile-emacs-usepackage/</link>
+			<pubDate>Sun, 26 May 2019 13:48:00 +0200</pubDate>
+			
+			<guid>https://shourai.github.io/posts/profile-emacs-usepackage/</guid>
+			<description>If you&amp;rsquo;d like to see how many packages you&amp;rsquo;ve loaded, what stage of
+initialization they&amp;rsquo;ve reached, and how much aggregate time they&amp;rsquo;ve
+spent (roughly), you can enable use-package-compute-statistics after
+loading use-package but before any use-package forms, and then run the
+command M-x use-package-report to see the results. The buffer
+displayed is a tabulated list. You can use S in a column to sort the
+rows based on it.</description>
+			<content type="html"><![CDATA[<p>If you&rsquo;d like to see how many packages you&rsquo;ve loaded, what stage of<br />
+initialization they&rsquo;ve reached, and how much aggregate time they&rsquo;ve<br />
+spent (roughly), you can enable <code>use-package-compute-statistics</code> after<br />
+loading use-package but before any use-package forms, and then run the<br />
+command <code>M-x use-package-report</code> to see the results. The buffer<br />
+displayed is a tabulated list. You can use <code>S</code> in a column to sort the<br />
+rows based on it.</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Useful SSH Commands</title>
+			<link>https://shourai.github.io/posts/ssh-commands/</link>
+			<pubDate>Sun, 26 May 2019 12:56:00 +0200</pubDate>
+			
+			<guid>https://shourai.github.io/posts/ssh-commands/</guid>
+			<description>To make it easier to SSH you can set up a config file in the .ssh folder
+containing the following.
+Host &amp;lt;host&amp;gt; HostName &amp;lt;192.168.1.1&amp;gt; User &amp;lt;username&amp;gt; with this you can just type ssh &amp;lt;host&amp;gt;.
+Send a command over SSH:
+ssh &amp;lt;user&amp;gt;@192.168.1.1 &#39;ls -l; ps -aux; whoami&#39;</description>
+			<content type="html"><![CDATA[<p>To make it easier to SSH you can set up a config file in the .ssh folder<br />
+containing the following.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">Host &lt;host&gt;
+    HostName &lt;<span class="m">192</span>.168.1.1&gt;
+    User &lt;username&gt;</code></pre></div>
+<p>with this you can just type <code>ssh &lt;host&gt;</code>.</p>
+
+<p>Send a command over SSH:<br />
+<code>ssh &lt;user&gt;@192.168.1.1 'ls -l; ps -aux; whoami'</code></p>
+]]></content>
+		</item>
+		
+	</channel>
+</rss>
