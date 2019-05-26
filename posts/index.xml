@@ -77,7 +77,8 @@ containing the following.
 Host &amp;lt;host&amp;gt; HostName &amp;lt;192.168.1.1&amp;gt; User &amp;lt;username&amp;gt; with this you can just type ssh &amp;lt;host&amp;gt;.
 Send a command over SSH:
 ssh &amp;lt;user&amp;gt;@192.168.1.1 &#39;ls -l; ps -aux; whoami&#39;
-rsync over SSH rsync -avzh -e &amp;quot;ssh -p $sshport&amp;quot; ~/folder1 $sshuser@$instancehost:~</description>
+rsync over SSH rsync -avzh SRC USER@HOST:DEST
+rsync -avzh -e &amp;quot;ssh -p $sshport&amp;quot; ~/folder1 $sshuser@$instancehost:~</description>
 			<content type="html"><![CDATA[
 
 <p>To make it easier to SSH you can set up a config file in the .ssh folder<br />
@@ -92,7 +93,8 @@ containing the following.</p>
 
 <h2 id="rsync-over-ssh">rsync over SSH</h2>
 
-<p><code>rsync -avzh -e &quot;ssh -p $sshport&quot; ~/folder1 $sshuser@$instancehost:~</code></p>
+<p><code>rsync -avzh SRC USER@HOST:DEST</code><br />
+<code>rsync -avzh -e &quot;ssh -p $sshport&quot; ~/folder1 $sshuser@$instancehost:~</code></p>
 ]]></content>
 		</item>
 		

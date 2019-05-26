@@ -61,7 +61,8 @@ containing the following.
 Host &amp;lt;host&amp;gt; HostName &amp;lt;192.168.1.1&amp;gt; User &amp;lt;username&amp;gt; with this you can just type ssh &amp;lt;host&amp;gt;.
 Send a command over SSH:
 ssh &amp;lt;user&amp;gt;@192.168.1.1 &#39;ls -l; ps -aux; whoami&#39;
-rsync over SSH rsync -avzh -e &amp;quot;ssh -p $sshport&amp;quot; ~/folder1 $sshuser@$instancehost:~</description>
+rsync over SSH rsync -avzh SRC USER@HOST:DEST
+rsync -avzh -e &amp;quot;ssh -p $sshport&amp;quot; ~/folder1 $sshuser@$instancehost:~</description>
     </item>
     
   </channel>
