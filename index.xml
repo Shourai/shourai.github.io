@@ -56,13 +56,14 @@ rows based on it.</description>
       <pubDate>Sun, 26 May 2019 12:56:00 +0200</pubDate>
       
       <guid>https://shourai.github.io/posts/ssh-commands/</guid>
-      <description>To make it easier to SSH you can set up a config file in the .ssh folder
+      <description>Generating SSH key Short read about using ED25519 instead of RSA Medium
+To generate a SSH key use:
+ssh-keygen -t ed25519 -C &amp;quot;comment&amp;quot;
+To add your public key to a server use:
+ssh-copy-id user@host
+SSH config file To make it easier to SSH you can set up a config file in the .ssh folder
 containing the following.
-Host &amp;lt;host&amp;gt; HostName &amp;lt;192.168.1.1&amp;gt; User &amp;lt;username&amp;gt; with this you can just type ssh &amp;lt;host&amp;gt;.
-Send a command over SSH:
-ssh &amp;lt;user&amp;gt;@192.168.1.1 &#39;ls -l; ps -aux; whoami&#39;
-rsync over SSH rsync -avzh SRC USER@HOST:DEST
-rsync -avzh -e &amp;quot;ssh -p $sshport&amp;quot; ~/folder1 $sshuser@$instancehost:~</description>
+~/.ssh/config # global options User user # host-specific options Host myserver HostName server-address Port port With such a configuration, the following commands are equivalent</description>
     </item>
     
   </channel>

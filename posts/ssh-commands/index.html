@@ -14,7 +14,7 @@
 
 <meta itemprop="datePublished" content="2019-05-26T12:56:00&#43;02:00" />
 <meta itemprop="dateModified" content="2019-05-26T12:56:00&#43;02:00" />
-<meta itemprop="wordCount" content="61">
+<meta itemprop="wordCount" content="116">
 
 
 
@@ -76,13 +76,30 @@
 			<div class="content">
 				
 
+<h2 id="generating-ssh-key">Generating SSH key<a href="#generating-ssh-key" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<p>Short read about using ED25519 instead of RSA <a href="https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54">Medium</a><br />
+To generate a SSH key use:<br />
+<code>ssh-keygen -t ed25519 -C &quot;comment&quot;</code><br />
+To add your public key to a server use:<br />
+<code>ssh-copy-id user@host</code></p>
+
+<h2 id="ssh-config-file">SSH config file<a href="#ssh-config-file" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
 <p>To make it easier to SSH you can set up a config file in the .ssh folder<br />
 containing the following.</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">Host &lt;host&gt;
-    HostName &lt;<span class="m">192</span>.168.1.1&gt;
-    User &lt;username&gt;</code></pre></div>
-<p>with this you can just type <code>ssh &lt;host&gt;</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">~/.ssh/config
 
+<span class="c1"># global options</span>
+User user
+
+<span class="c1"># host-specific options</span>
+Host myserver
+    HostName server-address
+    Port     port</code></pre></div>
+<p>With such a configuration, the following commands are equivalent</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ ssh -p port user@server-address
+$ ssh myserver</code></pre></div>
 <p>Send a command over SSH:<br />
 <code>ssh &lt;user&gt;@192.168.1.1 'ls -l; ps -aux; whoami'</code></p>
 
@@ -94,7 +111,7 @@ containing the following.</p>
 			</div>
 			<hr class="post-end">
 			<footer class="post-info">
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>61 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>116 Words</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-05-26 12:56 &#43;0200</p>
 			</footer>
 		</article>
