@@ -7,22 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 26 May 2019 22:04:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 26 May 2019 13:54:00 +0200</lastBuildDate>
     
 	<atom:link href="https://shourai.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Geodesic</title>
-      <link>https://shourai.github.io/posts/geodesic/</link>
-      <pubDate>Sun, 26 May 2019 22:04:00 +0200</pubDate>
-      
-      <guid>https://shourai.github.io/posts/geodesic/</guid>
-      <description>Lets derive the geodesic equation using the action principle.
-Let the action be defined as
-\[\tag{1} S = \int ds \]
-with the line element \(ds = \sqrt{-g_{\mu\nu}(x)dx^\mu dx^\nu}\).</description>
-    </item>
     
     <item>
       <title>macOS Python Notification</title>
