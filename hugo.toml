@@ -8,4 +8,5 @@ theme =  "PaperMod"
     dir = ':cacheDir/images'
 
 [params]
+  defaultTheme = 'dark'
   comments = true
