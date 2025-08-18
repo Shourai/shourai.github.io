@@ -47,8 +47,9 @@ For the lockscreen you can use `swaylock` and for idle timeout there is `swayidl
 
 ### Application launcher
 
-`tofi` instead of `rofi`.
+[`Walker`](https://github.com/abenz1267/walker) instead of `rofi`.
 There are also builds of `rofi` compatible with wayland.
+But personally `Walker` is nice application launcher.
 
 ### Configuration
 
@@ -58,17 +59,23 @@ You can create configs in `$XDG_CONFIG_HOME` or `~/.config/`.
 
 <https://wiki.hyprland.org/Configuring/Configuring-Hyprland/>
 
-```shell
-~/.config/hypr/hyprpaper.conf
-```
-
 #### Hyprpaper
 
 <https://github.com/hyprwm/hyprpaper>
 
 ```shell
-~/.config/waybar/config
+~/.config/hypr/hyprpaper.conf
+```
 
+#### Waybar
+
+<https://github.com/Alexays/Waybar/wiki/Configuration>
+
+```shell
+~/.config/waybar/config
+```
+
+```shell
 preload = /path/to/image.png
 #if more than one preload is desired then continue to preload other backgrounds
 preload = /path/to/next_image.png
@@ -79,14 +86,6 @@ wallpaper = monitor1,/path/to/image.png
 #if more than one monitor in use, can load a 2nd image
 wallpaper = monitor2,/path/to/next_image.png
 # .. more monitors
-```
-
-#### Waybar
-
-<https://github.com/Alexays/Waybar/wiki/Configuration>
-
-```shell
-~/.config/waybar/config
 ```
 
 #### Swaylock-effects
