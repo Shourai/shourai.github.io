@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Linux on Shourai</title>
+    <link>http://localhost:1313/tags/linux/</link>
+    <description>Recent content in Linux on Shourai</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 Aug 2023 10:19:13 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>X11 to Wayland</title>
+      <link>http://localhost:1313/posts/x11-to-wayland/</link>
+      <pubDate>Thu, 31 Aug 2023 10:19:13 +0200</pubDate>
+      <guid>http://localhost:1313/posts/x11-to-wayland/</guid>
+      <description>&lt;p&gt;In this post I will update my journey of moving from X11 to wayland.
+Currently I am running bspwm with polybar and everything works really well.
+It&amp;rsquo;s fairly minimalistic and very performant.&lt;/p&gt;
+&lt;p&gt;Several distributions are shipping with wayland instead of X11 such as Debian, Fedora, Manjaro and Ubuntu.
+Some time ago there were not many choices for tiling window managers, though Sway was one of the first.
+Now we have more choices and one that interests me the most is hyprland.
+To replace polybar I will use waybar.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

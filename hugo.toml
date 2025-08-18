@@ -1,0 +1,4 @@
+baseURL = 'https://shourai.github.io'
+languageCode = 'en-us'
+title = "Shourai"
+theme =  "PaperMod"
